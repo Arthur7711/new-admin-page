@@ -10,3 +10,7 @@ ul {
 ul li {
   margin-left: 0.5em;
 }
+.rotateSVG {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
