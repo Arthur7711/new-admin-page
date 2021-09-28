@@ -364,8 +364,10 @@ createMenu(menu, addingMenus);
 
 // menu part click
 document.querySelector(".navigationMenu").addEventListener("click", (event) => {
-  if (event.target.parentElement?.nextElementSibling?.nodeName === "UL") {
+  if (event.target.nodeName === "svg") {
     event.target.classList.toggle("rotateSVG");
+  }
+  if (event.target.parentElement?.nextElementSibling?.nodeName === "UL") {
     event.target.parentElement.nextElementSibling.classList.toggle(
       "subMenuItem"
     );
